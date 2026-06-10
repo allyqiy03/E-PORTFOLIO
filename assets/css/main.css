@@ -5031,3 +5031,122 @@ body {
 #footer strong {
 	display: none !important;
 }
+/* Achievement View More Button */
+.view-more-btn {
+	margin-top: 1.2em;
+	background: #f6b6c8 !important;
+	color: #ffffff !important;
+	border-radius: 8px;
+}
+
+/* Achievement Popup */
+.achievement-modal {
+	display: none;
+	position: fixed;
+	z-index: 99999;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background: rgba(0, 0, 0, 0.75);
+	padding: 3em 1em;
+}
+
+.achievement-modal-content {
+	background: #1b0d09;
+	margin: auto;
+	padding: 2em;
+	border-radius: 18px;
+	max-width: 950px;
+	border: 3px solid #f6b6c8;
+	text-align: center;
+}
+
+.achievement-modal-content h2 {
+	color: #ffffff;
+	margin-bottom: 1.2em;
+}
+
+.achievement-close {
+	color: #ffffff;
+	float: right;
+	font-size: 34px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.achievement-close:hover {
+	color: #f6b6c8;
+}
+
+.achievement-popup-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.2em;
+	margin-top: 1.5em;
+}
+
+.achievement-popup-grid img {
+	width: 100%;
+	border-radius: 12px;
+	border: 2px solid #f6b6c8;
+	object-fit: cover;
+}
+
+/* Phone view */
+@media screen and (max-width: 736px) {
+	.achievement-popup-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.achievement-modal-content {
+		padding: 1.2em;
+	}
+}
+.achievement-bottom-buttons {
+	width: 100%;
+	clear: both;
+	display: flex;
+	justify-content: center;
+	gap: 2em;
+	margin-top: 4em;
+	margin-bottom: 2em;
+}
+
+.achievement-bottom-buttons li {
+	list-style: none;
+}
+.achievement-button-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2em;
+	margin-top: 5em;
+	margin-bottom: 2em;
+	clear: both;
+}
+
+.achievement-button-wrapper .button {
+	min-width: 180px;
+	text-align: center;
+}
+.view-more-btn {
+	margin-top: 1.5em;
+	background: #f6b6c8;
+	color: #ffffff;
+	border: none;
+	border-radius: 8px;
+	padding: 0.9em 2.4em;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.view-more-btn:hover {
+	background: #ffffff;
+	color: #1b0d09;
+}
