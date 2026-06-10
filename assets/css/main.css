@@ -4983,3 +4983,51 @@ body {
 	background: #4b2e25 !important;
 	color: #ffffff !important;
 }
+/* ===== Evidence Page Footer Fix ===== */
+
+#footer {
+	background: #1b0d0a !important;
+	padding: 20px 0 10px 0 !important;
+	margin: 0 !important;
+	border-top: none !important;
+}
+
+#copyright {
+	background: #d985aa !important;
+	color: #ffffff !important;
+	border-radius: 18px !important;
+	padding: 18px 35px !important;
+	margin: 0 auto !important;
+	width: fit-content !important;
+	text-align: center !important;
+}
+
+#copyright ul,
+#copyright li {
+	color: #ffffff !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+#copyright a {
+	color: #ffffff !important;
+}
+/* Hide leftover TXT/template text under footer */
+#copyright .menu li:not(:first-child) {
+	display: none !important;
+}
+
+#copyright .menu li::after,
+#copyright .menu li::before {
+	display: none !important;
+	content: none !important;
+}
+
+#footer h1,
+#footer h2,
+#footer #logo,
+#footer .logo,
+#footer .major,
+#footer strong {
+	display: none !important;
+}
