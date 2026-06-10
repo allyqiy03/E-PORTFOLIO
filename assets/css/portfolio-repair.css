@@ -1,0 +1,71 @@
+html {
+  scroll-padding-top: 0 !important;
+}
+
+body {
+  padding-top: 0 !important;
+  overflow-x: hidden;
+}
+
+#page-wrapper {
+  padding-top: 0 !important;
+}
+
+/* Navbar must stay normal, not fixed */
+#nav {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  width: 100% !important;
+  z-index: 1000 !important;
+  margin: 0 !important;
+}
+
+/* Arrange navbar items nicely */
+#nav > ul {
+  display: flex !important;
+  align-items: stretch !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+  gap: 0.5rem !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+#nav > ul > li {
+  position: relative !important;
+  margin: 0 !important;
+}
+
+#nav > ul > li > a {
+  display: block !important;
+  white-space: nowrap !important;
+}
+
+/* Certificate dropdown */
+#nav > ul > li > ul {
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  min-width: 230px !important;
+  z-index: 9999 !important;
+}
+
+#nav > ul > li > ul li,
+#nav > ul > li > ul li a {
+  width: 100% !important;
+  white-space: nowrap !important;
+}
+
+#nav,
+#nav > ul,
+#nav > ul > li {
+  overflow: visible !important;
+}
+
+/* Do not push banner under navbar */
+#banner.portfolio-cover {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  min-height: 100vh;
+}
