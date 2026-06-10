@@ -4962,3 +4962,24 @@ body {
 	color: #ffffff !important;
 	transform: scale(1.05);
 }
+.pdf-btn {
+	position: relative !important;
+	z-index: 9999 !important;
+	pointer-events: auto !important;
+	display: inline-block !important;
+	margin-top: 20px !important;
+	padding: 12px 28px !important;
+	background: #d98ca8 !important;
+	color: #ffffff !important;
+	text-decoration: none !important;
+	border-radius: 30px !important;
+	font-weight: bold !important;
+	letter-spacing: 1px !important;
+	text-transform: uppercase !important;
+	cursor: pointer !important;
+}
+
+.pdf-btn:hover {
+	background: #4b2e25 !important;
+	color: #ffffff !important;
+}
