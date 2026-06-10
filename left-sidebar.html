@@ -62,11 +62,8 @@
 
 <section class="evidence-project-section">
 
-	<input type="checkbox" id="learned-toggle" class="popup-toggle">
-
-	<div class="evidence-title-row">
+	<div class="evidence-title-row"></div>
 	<h3>Project Summary</h3>
-	<button type="button" id="openLearned" class="view-popup-btn">VIEW</button>
 </div>
 
 	<p>
@@ -77,22 +74,9 @@
 		cloud-based data exfiltration through Dropbox and Google Drive.
 	</p>
 
-	<div class="evidence-popup">
-		<div class="evidence-popup-box">
-			<label for="learned-toggle" class="evidence-popup-close">&times;</label>
-
-			<h3>What I Learned</h3>
-
-			<ul>
-				<li>How to handle digital evidence carefully without damaging its integrity.</li>
-				<li>Why volatile data such as RAM and live network traffic must be collected early.</li>
-				<li>How deleted files can still be recovered from forensic images.</li>
-				<li>How chain of custody and SHA-256 hashing protect evidence reliability.</li>
-				<li>How insider threats can involve USB devices, email, and cloud storage.</li>
-			</ul>
-		</div>
-	</div>
-
+	<a href="files/digital-forensics1.pdf" target="_blank" class="pdf-btn">
+		View Digital Forensics PDF
+	</a>
 </section>
 
 <section class="evidence-project-section">
@@ -277,43 +261,10 @@
 </section>
 
 
-<!-- PASTE POPUP CODE HERE -->
-<input type="checkbox" id="learned-toggle" class="popup-toggle">
-
-<div class="evidence-popup">
-	<div class="evidence-popup-box">
-		<label for="learned-toggle" class="evidence-popup-close">&times;</label>
-
-		<h3>What I Learned</h3>
-
-		<ul>
-			<li>How to handle digital evidence carefully without damaging its integrity.</li>
-			<li>Why volatile data such as RAM and live network traffic must be collected early.</li>
-			<li>How deleted files can still be recovered from forensic images.</li>
-			<li>How chain of custody and SHA-256 hashing protect evidence reliability.</li>
-			<li>How insider threats can involve USB devices, email, and cloud storage.</li>
-		</ul>
-	</div>
-</div>
 
 </article>
 										</article>
-										<!-- What I Learned Popup -->
-<div id="learned-popup" class="evidence-popup">
-	<div class="evidence-popup-box">
-		<a href="#" class="evidence-popup-close">&times;</a>
-
-		<h3> I Learned</h3>
-
-		<ul>
-			<li>How to handle digital evidence carefully without damaging its integrity.</li>
-			<li>Why volatile data such as RAM and live network traffic must be collected early.</li>
-			<li>How deleted files can still be recovered from forensic images.</li>
-			<li>How chain of custody and SHA-256 hashing protect evidence reliability.</li>
-			<li>How insider threats can involve USB devices, email, and cloud storage.</li>
-		</ul>
-	</div>
-</div>
+										
 
 								</div>
 							</div>
@@ -439,6 +390,23 @@
 
 		</div>
 
+	<!-- What I Learned Popup -->
+<div id="learnedPopup" class="learned-popup">
+	<div class="learned-popup-box">
+		<button type="button" class="learned-popup-close" onclick="closeLearnedPopup()">&times;</button>
+
+		<h3>WHAT I LEARNED</h3>
+
+		<ul>
+			<li>How to handle digital evidence carefully without damaging its integrity.</li>
+			<li>Why volatile data such as RAM and live network traffic must be collected early.</li>
+			<li>How deleted files can still be recovered from forensic images.</li>
+			<li>How chain of custody and SHA-256 hashing protect evidence reliability.</li>
+			<li>How insider threats can involve USB devices, email, and cloud storage.</li>
+		</ul>
+	</div>
+</div>	
+		
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.dropotron.min.js"></script>
@@ -456,6 +424,14 @@
 	});
 </script>
 
+<script>
+	function openLearnedPopup() {
+		document.getElementById("learnedPopup").classList.add("show");
+	}
+
+	function closeLearnedPopup() {
+		document.getElementById("learnedPopup").classList.remove("show");
+	}
+</script>
 </body>
-	</body>
 </html>
