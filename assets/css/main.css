@@ -5147,3 +5147,322 @@ body {
 	background: #ffffff;
 	color: #1b0d09;
 }
+/* Home Cover Page */
+.portfolio-cover {
+	background: #1b0d09;
+	padding: 4em 2em 5em 2em;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.cover-container {
+	width: 100%;
+	max-width: 1350px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 4em;
+	align-items: center;
+}
+
+.cover-left {
+	text-align: center;
+}
+
+.portfolio-label {
+	font-family: Georgia, serif;
+	font-size: 3.2em;
+	font-weight: bold;
+	color: #fff8f2;
+	letter-spacing: 2px;
+	margin-bottom: 0.4em;
+	text-align: left;
+}
+
+.photo-frame {
+	background: #111;
+	padding: 1.4em;
+	border: 1px solid #cfc7c2;
+	box-shadow: 30px 25px 0 #9b9490;
+	max-width: 620px;
+	margin: 0 auto;
+}
+
+.profile-photo {
+	width: 100%;
+	display: block;
+	object-fit: cover;
+}
+
+.quote {
+	color: #f6b6c8;
+	font-size: 1em;
+	line-height: 1.6em;
+	margin-top: 2em;
+	max-width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.cover-right {
+	text-align: left;
+	padding-left: 2em;
+}
+
+.cover-right h1 {
+	font-family: Georgia, serif;
+	font-size: 5.7em;
+	line-height: 1.15em;
+	color: #fff8f2;
+	margin-bottom: 0.5em;
+	letter-spacing: 4px;
+}
+
+.cover-right h2,
+.cover-right h3 {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin-bottom: 0.4em;
+}
+
+.cover-right h2 {
+	font-size: 1.6em;
+}
+
+.cover-right h3 {
+	font-size: 1.5em;
+	margin-top: 1.7em;
+}
+
+.cover-right .course {
+	color: #ffffff;
+	font-size: 1.2em;
+	margin-bottom: 1.2em;
+}
+
+.contact-list {
+	margin-top: 1.5em;
+	margin-bottom: 2em;
+}
+
+.contact-list p {
+	color: #ffffff;
+	font-size: 1.1em;
+	margin: 0.7em 0;
+}
+
+.view-btn {
+	background: #f6b6c8 !important;
+	color: #ffffff !important;
+	border-radius: 8px;
+}
+
+/* Phone view */
+@media screen and (max-width: 980px) {
+	.cover-container {
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
+
+	.cover-right {
+		text-align: center;
+		padding-left: 0;
+	}
+
+	.portfolio-label {
+		text-align: center;
+	}
+
+	.cover-right h1 {
+		font-size: 3.8em;
+	}
+}
+/* RESTORE HOMEPAGE COVER */
+#banner.portfolio-cover {
+	background: #1b0d09;
+	padding: 4em 2em 5em 2em;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#banner .cover-container {
+	width: 100%;
+	max-width: 1250px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 48% 52%;
+	gap: 4em;
+	align-items: center;
+}
+
+#banner .cover-left {
+	text-align: center;
+}
+
+#banner .portfolio-label {
+	font-family: Georgia, serif;
+	font-size: 3em;
+	font-weight: bold;
+	color: #fff8f2;
+	letter-spacing: 2px;
+	margin: 0 0 0.6em 0;
+	text-align: left;
+	line-height: 1;
+	white-space: nowrap;
+}
+
+#banner .photo-frame {
+	background: #111;
+	padding: 1.2em;
+	border: 1px solid #d8d0cc;
+	box-shadow: 28px 25px 0 #9b9490;
+	max-width: 560px;
+	margin: 0 auto;
+}
+
+#banner .profile-photo {
+	width: 100%;
+	display: block;
+	height: auto;
+}
+
+#banner .quote {
+	color: #f6b6c8;
+	font-size: 0.95em;
+	line-height: 1.6em;
+	margin-top: 2em;
+	max-width: 560px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#banner .cover-right {
+	text-align: left;
+	padding-left: 1em;
+}
+
+#banner .cover-right h1 {
+	font-family: Georgia, serif;
+	font-size: 4.8em;
+	line-height: 1.15em;
+	color: #fff8f2;
+	margin: 0 0 0.6em 0;
+	letter-spacing: 4px;
+	text-align: left;
+}
+
+#banner .cover-right h2 {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 1.4em;
+	line-height: 1.4em;
+	margin-bottom: 0.3em;
+}
+
+#banner .cover-right h3 {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 1.3em;
+	line-height: 1.4em;
+	margin-top: 1.8em;
+	margin-bottom: 1.2em;
+}
+
+#banner .cover-right .course {
+	color: #ffffff;
+	font-size: 1.1em;
+	margin-bottom: 1em;
+}
+
+#banner .contact-list p {
+	color: #ffffff;
+	font-size: 1.05em;
+	margin: 0.8em 0;
+}
+
+#banner .view-btn {
+	background: #f6b6c8 !important;
+	color: #ffffff !important;
+	border-radius: 8px;
+	margin-top: 1em;
+}
+
+/* Tablet / Phone */
+@media screen and (max-width: 980px) {
+	#banner .cover-container {
+		grid-template-columns: 1fr;
+		gap: 3em;
+	}
+
+	#banner .portfolio-label,
+	#banner .cover-right,
+	#banner .cover-right h1,
+	#banner .cover-right h2,
+	#banner .cover-right h3,
+	#banner .cover-right .course,
+	#banner .contact-list p {
+		text-align: center;
+	}
+
+	#banner .cover-right {
+		padding-left: 0;
+	}
+
+	#banner .cover-right h1 {
+		font-size: 3.5em;
+	}
+
+	#banner .portfolio-label {
+		font-size: 2.5em;
+	}
+}
+/* Bigger homepage profile picture */
+#banner .photo-frame {
+	max-width: 720px !important;
+	width: 90% !important;
+	padding: 1em !important;
+}
+
+#banner .profile-photo {
+	width: 100% !important;
+	height: auto !important;
+	display: block !important;
+}
+/* Align cover text under name to the left */
+#banner .cover-right h2,
+#banner .cover-right h3,
+#banner .cover-right .course,
+#banner .contact-list,
+#banner .contact-list p {
+	text-align: left !important;
+	margin-left: 0 !important;
+}
+
+#banner .contact-list {
+	width: fit-content;
+}
+
+#banner .view-btn {
+	display: inline-block !important;
+	margin-left: 0 !important;
+}
+/* Home bottom next button */
+.home-bottom-button-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 4em;
+	margin-bottom: 3em;
+}
+
+.home-bottom-button-wrapper .button {
+	min-width: 180px;
+	text-align: center;
+}
