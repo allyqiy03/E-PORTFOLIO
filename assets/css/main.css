@@ -5671,3 +5671,51 @@ body.homepage {
 	display: block;
 	object-fit: cover;
 }
+/* Cisco intro image */
+.cisco-intro-section {
+	text-align: center;
+	margin-top: 2em;
+	margin-bottom: 3em;
+}
+
+.cisco-intro-img {
+	width: 100%;
+	max-width: 300px;
+	border-radius: 16px;
+	border: 3px solid #f6b6c8;
+	box-shadow: 0 12px 28px rgba(246, 182, 200, 0.18);
+	display: block;
+	margin: 0 auto 1.8em auto;
+	object-fit: cover;
+}
+
+.cisco-intro-section p {
+	max-width: 900px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 1.8em;
+}
+/* Cybersecurity intro image */
+.cyber-intro-section {
+	text-align: center;
+	margin-top: 2em;
+	margin-bottom: 3em;
+}
+
+.cyber-intro-img {
+	width: 100%;
+	max-width: 300px;
+	border-radius: 16px;
+	border: 3px solid #f6b6c8;
+	box-shadow: 0 12px 28px rgba(246, 182, 200, 0.18);
+	display: block;
+	margin: 0 auto 1.8em auto;
+	object-fit: cover;
+}
+
+.cyber-intro-section p {
+	max-width: 900px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 1.8em;
+}
