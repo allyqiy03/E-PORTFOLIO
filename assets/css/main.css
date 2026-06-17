@@ -5466,3 +5466,193 @@ body {
 	min-width: 180px;
 	text-align: center;
 }
+/* ================================
+   SOFT MOTION EFFECTS - PORTFOLIO
+   Clean, professional, not too much
+================================ */
+
+/* Smooth page load */
+body.homepage {
+	animation: pageFadeIn 0.8s ease-in-out;
+}
+
+@keyframes pageFadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* Cover image float motion */
+#banner .photo-frame {
+	animation: softFloat 4s ease-in-out infinite;
+	transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#banner .photo-frame:hover {
+	transform: translateY(-8px) scale(1.01);
+	box-shadow: 34px 30px 0 #9b9490;
+}
+
+@keyframes softFloat {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-8px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+/* Name and cover text entrance */
+#banner .cover-right h1 {
+	animation: slideInRight 0.9s ease forwards;
+}
+
+#banner .cover-right h2,
+#banner .cover-right .course,
+#banner .cover-right h3,
+#banner .contact-list,
+#banner .view-btn {
+	animation: softRise 0.9s ease forwards;
+}
+
+@keyframes slideInRight {
+	from {
+		opacity: 0;
+		transform: translateX(35px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes softRise {
+	from {
+		opacity: 0;
+		transform: translateY(25px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Button soft hover */
+.view-btn,
+.home-bottom-button-wrapper .button,
+.achievement-button-wrapper .button,
+.view-more-btn {
+	transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.view-btn:hover,
+.home-bottom-button-wrapper .button:hover,
+.achievement-button-wrapper .button:hover,
+.view-more-btn:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 10px 25px rgba(246, 182, 200, 0.25);
+}
+
+/* Career exploration section */
+.career-exploration,
+.personal-skills-section,
+.soft-skills-section,
+.career-target-section {
+	animation: sectionFadeUp 0.9s ease both;
+}
+
+@keyframes sectionFadeUp {
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Career image hover */
+.career-img {
+	transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.career-img:hover {
+	transform: scale(1.03);
+	filter: brightness(1.05);
+}
+
+/* Skill bars fill motion */
+.skill-fill {
+	animation: skillGrow 1.4s ease forwards;
+	transform-origin: left;
+}
+
+@keyframes skillGrow {
+	from {
+		transform: scaleX(0);
+	}
+	to {
+		transform: scaleX(1);
+	}
+}
+
+/* Soft skill cards hover */
+.soft-skill-card,
+.career-content,
+.technical-skills-box {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.soft-skill-card:hover,
+.career-content:hover,
+.technical-skills-box:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 12px 28px rgba(246, 182, 200, 0.12);
+}
+
+/* Career tags gentle hover */
+.career-tags span,
+.soc-skill-tags span {
+	transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.career-tags span:hover,
+.soc-skill-tags span:hover {
+	transform: translateY(-3px);
+	background: #f6b6c8;
+	color: #ffffff;
+}
+
+/* Certificate / achievement cards if same CSS used */
+.cert-card {
+	transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.cert-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 14px 30px rgba(246, 182, 200, 0.18);
+}
+
+.cert-card img {
+	transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.cert-card:hover img {
+	transform: scale(1.02);
+	filter: brightness(1.05);
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation: none !important;
+		transition: none !important;
+	}
+}
