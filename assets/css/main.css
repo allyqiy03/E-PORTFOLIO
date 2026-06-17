@@ -5656,3 +5656,18 @@ body.homepage {
 		transition: none !important;
 	}
 }
+/* Cybersecurity intro profile image size fix */
+.cyber-intro-img {
+	max-width: 520px;
+	margin: 0 auto 2em auto;
+	display: block;
+	border-radius: 14px;
+	overflow: hidden;
+}
+
+.cyber-intro-img img {
+	width: 100%;
+	height: auto;
+	display: block;
+	object-fit: cover;
+}
