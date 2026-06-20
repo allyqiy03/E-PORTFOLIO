@@ -121,10 +121,10 @@
 
 	</div>
 
-	<ul class="actions">
-		<li><a href="cisco-cert.html" class="button large">Go Back</a></li>
-		<li><a href="Other-cert.html" class="button alt large">Next</a></li>
-	</ul>
+	<ul class="actions cyber-bottom-buttons">
+	<li><a href="Cisco-cert.html" class="button large">Go Back</a></li>
+	<li><a href="Other-cert.html" class="button alt large">Next</a></li>
+</ul>
 </section>
 
 	</div>
@@ -177,6 +177,29 @@
 		document.querySelectorAll(".dropotron").forEach(function (menu) {
 			menu.style.display = "none";
 		});
+	});
+</script>
+<script>
+	const cyberRevealItems = document.querySelectorAll(
+		".cyber-intro-section, .cert-card-section, .cert-card, .cyber-bottom-buttons"
+	);
+
+	cyberRevealItems.forEach(function(item) {
+		item.classList.add("cyber-motion");
+	});
+
+	const cyberObserver = new IntersectionObserver(function(entries) {
+		entries.forEach(function(entry) {
+			if (entry.isIntersecting) {
+				entry.target.classList.add("show");
+			}
+		});
+	}, {
+		threshold: 0.15
+	});
+
+	cyberRevealItems.forEach(function(item) {
+		cyberObserver.observe(item);
 	});
 </script>
 
